@@ -1,7 +1,5 @@
 #!/bin/bash
 
-git fetch
-git branch ir_branch
 git submodule update --init
 git clone https://github.com/tianocore/edk2-libc
 cd edk2-libc
