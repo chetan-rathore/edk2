@@ -90,8 +90,8 @@ UefiHiiServicesLibConstructor (
   //
   // Retrieve the pointer to the UEFI HII Config Routing Protocol
   //
-  Status = gBS->LocateProtocol (&gEfiHiiConfigRoutingProtocolGuid, NULL, (VOID **) &gHiiConfigRouting);
-  ASSERT_EFI_ERROR (Status);
+//  Status = gBS->LocateProtocol (&gEfiHiiConfigRoutingProtocolGuid, NULL, (VOID **) &gHiiConfigRouting);
+//  ASSERT_EFI_ERROR (Status);
 
   //
   // Retrieve the pointer to the optional UEFI HII Font Protocol
