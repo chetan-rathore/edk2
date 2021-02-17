@@ -59,11 +59,8 @@
   DxeServicesTableLib|MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.inf
   DxeServicesLib|MdePkg/Library/DxeServicesLib/DxeServicesLib.inf
   ReportStatusCodeLib|MdePkg/Library/BaseReportStatusCodeLibNull/BaseReportStatusCodeLibNull.inf
-
-  SbsaValLib|ShellPkg/Application/sbsa-acs/val/SbsaValLib.inf
-  SbsaPalLib|ShellPkg/Application/sbsa-acs/platform/pal_uefi/SbsaPalLib.inf
+  
   FdtLib|EmbeddedPkg/Library/FdtLib/FdtLib.inf
-#  DtPlatformDtbLoaderLib|EmbeddedPkg/Library/DxeDtPlatformDtbLoaderLibDefault/DxeDtPlatformDtbLoaderLibDefault.inf
 
 [LibraryClasses.ARM,LibraryClasses.AARCH64]
   #
@@ -102,8 +99,6 @@
   ShellPkg/Library/UefiShellDebug1CommandsLib/UefiShellDebug1CommandsLib.inf
   ShellPkg/Library/UefiShellNetwork1CommandsLib/UefiShellNetwork1CommandsLib.inf
   ShellPkg/Library/UefiShellNetwork2CommandsLib/UefiShellNetwork2CommandsLib.inf
-#  EmbeddedPkg/Library/FdtLib/FdtLib.inf
-#  EmbeddedPkg/Library/DxeDtPlatformDtbLoaderLibDefault/DxeDtPlatformDtbLoaderLibDefault.inf
 
   ShellPkg/Application/Shell/Shell.inf {
     <PcdsFixedAtBuild>
@@ -153,7 +148,6 @@
   }
   ShellPkg/DynamicCommand/DpDynamicCommand/DpApp.inf
   ShellPkg/Application/AcpiViewApp/AcpiViewApp.inf
-  ShellPkg/Application/sbsa-acs/uefi_app/SbsaAvs.inf
 
 [BuildOptions]
   *_*_*_CC_FLAGS = -D DISABLE_NEW_DEPRECATED_INTERFACES
